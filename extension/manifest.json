@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Prompt Optimizer",
+  "version": "1.0.0",
+  "description": "基于 57 个成熟框架的智能提示词优化助手,支持 DeepSeek、Kimi、OpenRouter 等多种 AI 服务",
+  "permissions": [
+    "sidePanel",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://api.deepseek.com/*",
+    "https://api.moonshot.cn/*",
+    "https://openrouter.ai/*"
+  ],
+  "background": {
+    "service_worker": "background/service_worker.js"
+  },
+  "side_panel": {
+    "default_path": "side_panel/index.html"
+  },
+  "action": {
+    "default_title": "打开提示词优化器"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
