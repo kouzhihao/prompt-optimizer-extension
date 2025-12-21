@@ -7,7 +7,7 @@
 
 ## 演示视频
 
-<video src="[resources/video](https://github.com/chujianyun/prompt-optimizer-extension/tree/main/resources/video)/提示词优化插件使用演示.mp4" controls width="100%"></video>
+参见：`resources/video/提示词优化插件使用演示.mp4` 
 
 ## 功能特性
 
