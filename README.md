@@ -1,6 +1,9 @@
 # Prompt Optimizer
+当前很多提示词优化工具缺乏用户核对，而且给出的提示词虽然很结构化和详细，但是多为通用框架。
 
-基于 57 个成熟提示词框架的 Chrome 浏览器智能提示词优化助手。
+本工具是基于 57 个知名的专业提示词框架的 Chrome 浏览器智能提示词优化助手。
+
+特色：会根据你的描述或原始提示词，匹配最适合的框架，对描述进行澄清，最终产出专业的提示词。
 
 ## 演示视频
 
@@ -87,6 +90,10 @@ prompt-optimizer-extension/
 - [项目完成总结](PROJECT_SUMMARY.md)
 - [扩展详细说明](extension/README.md)
 - [测试指南](extension/TESTING.md)
+
+## 相关项目
+
+- [Claude Skill 版本](https://github.com/chujianyun/skills) - 基于同一套提示词框架的 Claude Desktop Skill 实现
 
 ## 许可证
 
