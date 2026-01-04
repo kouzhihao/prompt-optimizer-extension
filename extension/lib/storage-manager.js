@@ -25,6 +25,9 @@ class StorageManager {
       // 火山引擎
       volcengineApiKey: '',
       volcengineModel: 'doubao-pro-32k',
+      // AntChat
+      antchatApiKey: '',
+      antchatModel: 'Kimi-K2-Instruct-0905',
       // OpenAI 兼容服务配置
       customApiKey: '',
       customModel: '',
@@ -115,6 +118,9 @@ class StorageManager {
     } else if (activeService === 'volcengine') {
       if (!config.volcengineApiKey) missingFields.push('volcengineApiKey');
       if (!config.volcengineModel) missingFields.push('volcengineModel');
+    } else if (activeService === 'antchat') {
+      if (!config.antchatApiKey) missingFields.push('antchatApiKey');
+      if (!config.antchatModel) missingFields.push('antchatModel');
     } else if (activeService === 'custom') {
       if (!config.customApiKey) missingFields.push('customApiKey');
       if (!config.customModel) missingFields.push('customModel');
@@ -177,6 +183,12 @@ class StorageManager {
         apiKey: config.volcengineApiKey,
         model: config.volcengineModel
       };
+    } else if (service === 'antchat') {
+      return {
+        service: 'antchat',
+        apiKey: config.antchatApiKey,
+        model: config.antchatModel
+      };
     } else if (service === 'custom') {
       return {
         service: 'custom',
@@ -212,6 +224,7 @@ class StorageManager {
       siliconflowModel: config.siliconflowModel,
       cherryinModel: config.cherryinModel,
       volcengineModel: config.volcengineModel,
+      antchatModel: config.antchatModel,
       customModel: config.customModel,
       customEndpoint: config.customEndpoint
     };
